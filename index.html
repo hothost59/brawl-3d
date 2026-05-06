@@ -1,6 +1,6 @@
 <html lang="en-us">
 <head>
-<base href="https://cdn.jsdelivr.net/gh/genizy/google-class@main/brawl-3d/">
+<base href="https://cdn.jsdelivr.net/gh/hothost59/brawl-3d@main/">
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
@@ -115,10 +115,8 @@
       return parts;
     }
     (async () => {
-      const [wasmUrl, dataUrl] = await Promise.all([
-        mergeFiles(getParts("Build/brawl.wasm", 1, 4), "brawl.wasm"),
-        mergeFiles(getParts("Build/brawl.data", 1, 2), "brawl.data"),
-      ]);
+      const wasmUrl = await mergeFiles(getParts("Build/brawl.wasm", 1, 4), "brawl.wasm");
+      const dataUrl = "Build/brawl.data";
         const hideFullScreenButton = "";
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/brawl.loader.js";

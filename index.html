@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+<base href="https://cdn.jsdelivr.net/gh/hothost59/brawl-3d@main/">
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-<link rel="stylesheet" href="https://app-462102.games.s3.yandex.net/462102/hh0quk4nkr9enqiov878d89wqvzjvex7/style.css"/>
-<script src="https://app-462102.games.s3.yandex.net/462102/hh0quk4nkr9enqiov878d89wqvzjvex7/sdk.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<script src="sdk.js"></script>
 <style>
         canvas:focus {
             outline: none;
@@ -33,7 +34,7 @@
 </div>
 <div id="loading-cover" style="display:none;">
 <div id="unity-loading-bar">
-<div id="unity-logo"><img src="https://app-462102.games.s3.yandex.net/462102/hh0quk4nkr9enqiov878d89wqvzjvex7/Images/logo.png"/></div>
+<div id="unity-logo"><img src="Images/logo.png"/></div>
 <div id="unity-progress-bar-empty" style="display: none;">
 <div id="unity-progress-bar-full"></div>
 </div>
@@ -41,8 +42,7 @@
 </div>
 </div>
 <script>
-        const baseUrl = "https://app-462102.games.s3.yandex.net/462102/hh0quk4nkr9enqiov878d89wqvzjvex7/";
-        const buildUrl = baseUrl + "Build";
+        const buildUrl = "Build";
         const loaderUrl = buildUrl + "/65469d8543560fc07c8f5ccad80219fb.loader.js";
         const config = {
             dataUrl: buildUrl + "/3c8a4fa855f16e639cf80965845306f0.data.br",
@@ -65,7 +65,7 @@
             container.className = "unity-mobile";
         }
 
-        loadingCover.style.background = "url('https://app-462102.games.s3.yandex.net/462102/hh0quk4nkr9enqiov878d89wqvzjvex7/Images/background.png') center / cover";
+        loadingCover.style.background = "url('Images/background.png') center / cover";
         loadingCover.style.display = "";
 
         let StartUnityInstance;
